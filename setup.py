@@ -5,11 +5,12 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="ylecomments",
-    version="1.0.0",
+    version="1.0.1",
     author="Juhani Astikainen",
     author_email="juhani.astikainen@gmail.com",
     description="A Python wrapper for Yle's Comments API",
     long_description=long_description,
+    license="MIT",
     long_description_content_type="text/markdown",
     url="https://github.com/juhanias/ylecomments",
     project_urls={
@@ -25,5 +26,5 @@ setuptools.setup(
     ],
     packages=["ylecomments"],
     python_requires=">=3.7",
-    requires=["requests"],
+    install_requires=["requests<=2.28.2"],
 )
